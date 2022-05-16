@@ -4,8 +4,8 @@ import { User } from './user';
 
 @Injectable()
 export class AuthService {
-  private _registerUrl = "'http://localhost:3000/api/register";
-  private _loginUrl = 'http://localhost:3000/api/login';
+  private _registerUrl = "'http://localhost:4200/api/register";
+  private _loginUrl = 'http://localhost:4200/api/login';
   constructor(private http: HttpClient) {}
 
   registerUser(user: User) {
