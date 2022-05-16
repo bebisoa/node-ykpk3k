@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AuthGuard } from './authentification/auth.guard';
 import { PatientListesComponent } from './patient-listes/patient-listes.component';
 
 @NgModule({
@@ -15,6 +16,7 @@ import { PatientListesComponent } from './patient-listes/patient-listes.componen
   ],
   declarations: [AppComponent, TopBarComponent, PatientListesComponent],
   bootstrap: [AppComponent],
+  providers: [AuthGuard],
 })
 export class AppModule {}
 
