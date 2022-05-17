@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { AuthGuard } from './authentification/auth.guard';
 import { PatientListesComponent } from './patient-listes/patient-listes.component';
-import { PageComponent } from './page/page.component';
+import { ResultatComponent } from './resultat/resultat.component';
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { PageComponent } from './page/page.component';
     ReactiveFormsModule,
     RouterModule.forRoot([{ path: '', component: PatientListesComponent }]),
   ],
-  declarations: [AppComponent, TopBarComponent, PatientListesComponent, PageComponent],
+  declarations: [AppComponent, TopBarComponent, PatientListesComponent, ResultatComponent],
   bootstrap: [AppComponent],
   providers: [AuthGuard],
 })
